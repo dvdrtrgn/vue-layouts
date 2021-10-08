@@ -6,13 +6,6 @@
   </div>
 </template>
 
-<script>
-import AppLayout from './layouts/AppLayout.vue'
-export default {
-  components: { AppLayout }
-}
-</script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
