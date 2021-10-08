@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <AppLayoutLinks></AppLayoutLinks>
-    <router-view/>
+    <AppLayout>
+      <router-view/>
+    </AppLayout>
   </div>
 </template>
 
 <script>
-import AppLayoutLinks from './layouts/AppLayoutLinks.vue'
+import AppLayout from './layouts/AppLayout.vue'
 export default {
-  components: {AppLayoutLinks}
+  components: { AppLayout }
 }
 </script>
 
