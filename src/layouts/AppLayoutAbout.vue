@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import AppLayoutLinks from '@/layouts/AppLayoutLinks'
+import AppLayoutLinks from './AppLayoutLinks.vue'
 export default {
-  name: "AppLayoutAbout",
+  name: 'AppLayoutAbout',
   components: {AppLayoutLinks}
 }
 </script>
 
 <style scoped>
 .header {
-  height: 5rem;
   background-color: blue;
+  height: 5rem;
 }
 </style>

@@ -9,7 +9,7 @@
 <script>
 import AppLayoutLinks from '@/layouts/AppLayoutLinks'
 export default {
-  name: "AppLayoutContacts",
+  name: 'AppLayoutContacts',
   components: {
     AppLayoutLinks
   }
@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .header {
-  height: 5rem;
   background-color: red;
+  height: 5rem;
 }
 </style>

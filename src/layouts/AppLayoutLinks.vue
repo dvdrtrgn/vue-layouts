@@ -9,7 +9,7 @@
 
 <script>
 export default {
-name: "AppLayoutLinks"
+  name: 'AppLayoutLinks'
 }
 </script>
 
@@ -18,8 +18,8 @@ name: "AppLayoutLinks"
   padding: 30px;
 }
 #nav a {
-  font-weight: bold;
   color: #2c3e50;
+  font-weight: bold;
 }
 #nav a.router-link-exact-active {
   color: #42b983;
