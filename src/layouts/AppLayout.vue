@@ -5,14 +5,27 @@
 </template>
 
 <script>
-const defaultLayout = 'AppLayoutDefault'
+import { markRaw } from 'vue'
+import AppLayoutDefault from './AppLayoutDefault.vue'
 
 export default {
   name: 'AppLayout',
-  computed: {
-    layout() {
-      const layout = this.$route.meta.layout || defaultLayout
-      return () => import(`@/layouts/${layout}.vue`)
+  setup() {
+    const layout = markRaw(AppLayoutDefault)
+
+    return { layout }
+  },
+  watch: {
+    '$route.meta': {
+      immediate: true,
+      async handler(meta) {
+        try {
+          const component = await import(`@/layouts/${meta.layout}.vue`)
+          this.layout = component?.default || AppLayoutDefault
+        } catch (e) {
+          this.layout = AppLayoutDefault
+        }
+      }
     }
   }
 }
