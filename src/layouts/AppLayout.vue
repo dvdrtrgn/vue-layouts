@@ -5,28 +5,29 @@
 </template>
 
 <script>
-import { shallowRef } from 'vue'
+import { shallowRef, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import AppLayoutDefault from './AppLayoutDefault.vue'
 
 export default {
   name: 'AppLayout',
-  setup() {
+  setup () {
     const layout = shallowRef(AppLayoutDefault)
+    const route = useRoute()
 
-    return { layout }
-  },
-  watch: {
-    '$route.meta': {
-      immediate: true,
-      async handler(meta) {
+    watch(
+      () => route.meta,
+      async (meta) => {
         try {
           const component = await import(`@/layouts/${meta.layout}.vue`)
-          this.layout = component?.default || AppLayoutDefault
+          layout.value = component?.default || AppLayoutDefault
         } catch (e) {
-          this.layout = AppLayoutDefault
+          layout.value = AppLayoutDefault
         }
-      }
-    }
+      },
+      { immediate: true }
+    )
+    return { layout }
   }
 }
 </script>
