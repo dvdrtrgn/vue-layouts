@@ -8,20 +8,20 @@
 </template>
 
 <script>
-export default {}
+  export default {};
 </script>
 
 <style lang="scss">
-#nav {
-  padding: 30px;
+  #nav {
+    padding: 30px;
 
-  a {
-    color: #2c3e50;
-    font-weight: bold;
+    a {
+      color: #2c3e50;
+      font-weight: bold;
 
-    &.router-link-exact-active {
-      color: #42b983;
+      &.router-link-exact-active {
+        color: #42b983;
+      }
     }
   }
-}
 </style>

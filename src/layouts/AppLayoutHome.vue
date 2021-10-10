@@ -7,18 +7,15 @@
 </template>
 
 <script>
-import TopNav from '../components/TopNav.vue'
+  import TopNav from '../components/TopNav.vue';
 
-export default {
-  name: 'AppLayoutHome',
-  components: {
-    TopNav
-  }
-}
+  export default {
+    components: { TopNav },
+  };
 </script>
 
 <style scoped>
-.header {
-  background-color: green;
-}
+  .header {
+    background-color: green;
+  }
 </style>

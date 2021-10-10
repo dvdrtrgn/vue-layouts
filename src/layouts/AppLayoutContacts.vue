@@ -7,18 +7,16 @@
 </template>
 
 <script>
-import TopNav from '../components/TopNav.vue'
+  import TopNav from '../components/TopNav.vue';
 
-export default {
-  name: 'AppLayoutContacts',
-  components: {
-    TopNav
-  }
-}
+  export default {
+    name: 'AppLayoutContacts',
+    components: { TopNav },
+  };
 </script>
 
 <style scoped>
-.header {
-  background-color: red;
-}
+  .header {
+    background-color: red;
+  }
 </style>

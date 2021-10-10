@@ -5,7 +5,7 @@
 </template>
 
 <script>
-export default {
-  name: "Contacts"
-}
+  export default {
+    name: 'Contacts',
+  };
 </script>
