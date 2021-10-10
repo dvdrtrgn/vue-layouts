@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import { markRaw } from 'vue'
+import { shallowRef } from 'vue'
 import AppLayoutDefault from './AppLayoutDefault.vue'
 
 export default {
   name: 'AppLayout',
   setup() {
-    const layout = markRaw(AppLayoutDefault)
+    const layout = shallowRef(AppLayoutDefault)
 
     return { layout }
   },
