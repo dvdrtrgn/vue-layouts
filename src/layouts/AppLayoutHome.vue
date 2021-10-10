@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import AppLayoutLinks from '@/layouts/AppLayoutLinks'
+import AppLayoutLinks from './AppLayoutLinks.vue'
+
 export default {
   name: 'AppLayoutHome',
   components: {

@@ -8,6 +8,7 @@
 
 <script>
 import AppLayoutLinks from './AppLayoutLinks.vue'
+
 export default {
   name: 'AppLayoutAbout',
   components: {AppLayoutLinks}
