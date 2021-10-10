@@ -1,18 +1,18 @@
 <template>
   <div>
     <header class="header">Contact Layout</header>
-    <AppLayoutLinks />
+    <TopNav />
     <slot />
   </div>
 </template>
 
 <script>
-import AppLayoutLinks from './AppLayoutLinks.vue'
+import TopNav from '../components/TopNav.vue'
 
 export default {
   name: 'AppLayoutContacts',
   components: {
-    AppLayoutLinks
+    TopNav
   }
 }
 </script>

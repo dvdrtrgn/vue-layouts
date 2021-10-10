@@ -34,6 +34,10 @@ export default {
 
 <style>
 .header {
-  height: 5rem;
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
 }
 </style>

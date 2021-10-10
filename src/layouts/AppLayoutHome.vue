@@ -1,18 +1,18 @@
 <template>
   <div>
     <header class="header">Home Layout</header>
-    <AppLayoutLinks />
+    <TopNav />
     <slot />
   </div>
 </template>
 
 <script>
-import AppLayoutLinks from './AppLayoutLinks.vue'
+import TopNav from '../components/TopNav.vue'
 
 export default {
   name: 'AppLayoutHome',
   components: {
-    AppLayoutLinks
+    TopNav
   }
 }
 </script>

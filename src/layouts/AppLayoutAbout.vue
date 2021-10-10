@@ -1,17 +1,17 @@
 <template>
   <div>
     <header class="header">About Layout</header>
-    <AppLayoutLinks />
+    <TopNav />
     <slot />
   </div>
 </template>
 
 <script>
-import AppLayoutLinks from './AppLayoutLinks.vue'
+import TopNav from '../components/TopNav.vue'
 
 export default {
   name: 'AppLayoutAbout',
-  components: {AppLayoutLinks}
+  components: {TopNav}
 }
 </script>
 

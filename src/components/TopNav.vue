@@ -8,9 +8,7 @@
 </template>
 
 <script>
-export default {
-  name: 'AppLayoutLinks'
-}
+export default {}
 </script>
 
 <style lang="scss">
