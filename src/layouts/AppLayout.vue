@@ -31,3 +31,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.header {
+  height: 5rem;
+}
+</style>

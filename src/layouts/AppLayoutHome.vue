@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="header" />
+    <header class="header">Home Layout</header>
     <AppLayoutLinks />
     <slot />
   </div>
@@ -20,6 +20,5 @@ export default {
 <style scoped>
 .header {
   background-color: green;
-  height: 5rem;
 }
 </style>

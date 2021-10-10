@@ -13,15 +13,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 #nav {
   padding: 30px;
-}
-#nav a {
-  color: #2c3e50;
-  font-weight: bold;
-}
-#nav a.router-link-exact-active {
-  color: #42b983;
+
+  a {
+    color: #2c3e50;
+    font-weight: bold;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
